@@ -1,30 +1,16 @@
 <?php
-echo '<font color=gold size=3>';
-$timezone = new DateTimeZone('Asia/Jakarta');
-$date = new DateTime();
-$date->setTimeZone($timezone);
-echo "<div class='toto'>
-<pre style='text-align: left;''><pre>", print_r($date, 1), "</div></pre></font>";
-?>
-<div class="koceng">
-<font face="courier" size="3" color="gray">
-<pre>
-> static site to getData from many fansub
-> getLatest anime release
-> bullshit popups ends here
-</pre>
-</div>
-</font>
 
-<?php
 echo'<font face=Ubuntu>';
 function wordFilter($text)
 {
+    //string layout
     $ambilkata = $text;
     $ambilkata = str_replace('<a class="entry-category"', '<p hidden>', $ambilkata);
     $ambilkata = str_replace('<b>Genre</b>', '<p hidden>', $ambilkata);
     $ambilkata = str_replace('<div class="entry-thumb">', '<div class="kotak">', $ambilkata);
+    $ambilkata = str_replace('h2', 'h3', $ambilkata);
 
+    //string modifyurl
     $ambilkata = str_replace('<a href="', '<a href="lib/get.php?anti=', $ambilkata);
     $ambilkata = str_replace('" rel=', '&fansub=SUCK" rel="nofollow" target="_blank" rel=', $ambilkata);
     $ambilkata = str_replace('" title', '&fansub=SUCK" rel="nofollow" target="_blank" " title', $ambilkata);

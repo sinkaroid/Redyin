@@ -39,7 +39,7 @@ div.rounded {
  #steal a{
 	 padding:5px 5px;
 	 margin:1;
-	 background:green;
+	 background:red;
 	 text-decoration:none;
 	 letter-spacing:1px;
 	 -moz-border-radius: 10px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;
