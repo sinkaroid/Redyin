@@ -8,7 +8,7 @@
 
 
   body { 
-   background: black url("http://localhost/antifansub/inc/bg.jpg") no-repeat fixed center; 
+   background: black url("http://localhost/daizurin/src/bg.jpg") no-repeat fixed center; 
  }
  a {
    color: hotpink;

@@ -6,7 +6,7 @@
 <!-- <script type="text/javascript" src="lib/rain.js"></script> -->
 <style>
   body { 
-   background: black url("inc/a.jpg") no-repeat fixed center; 
+   background: black url("src/bg.jpg") no-repeat fixed center; 
  }
  
 </style>
@@ -54,3 +54,19 @@ echo '</font>';
 <center><br><div id="steal"><a href="list" rel="nofollow" target="_blank"><font face=Ubuntu size="2" color="white"><b>animelist<b/></font></a></div></center><p>
 <?php
 require 'lib/str.php'; 
+
+?>
+<div class="page">
+<a href="/daizurin/page?x=1">1</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=2"><span class="pg">2</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=3"><span class="pg">3</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=4"><span class="pg">4</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=5"><span class="pg">5</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=6"><span class="pg">6</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=7"><span class="pg">7</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=8"><span class="pg">8</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=9"><span class="pg">9</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=10"><span class="pg">10</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=11"><span class="pg">&gt;</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=87"><span class="pg">Last</span></a> </div>
+<div>
+<p>
+<div class="intro">
+<font color=crimson face=consolas size=3>
+
+<b>&copy; Sin,</b>
+(<a href="lib/info.php" rel="nofollow" target="_blank" class="class2">server status</a>) | <font size="3" color="green">
+scraped in <?php echo(number_format(microtime(true) - $start_time, 2)); ?> sec.</font>
+<br><font size="3" color="gray">
+feel free to pull,issues,or stealing at:<br><font color=blue> https://github.com/sinkaroid/daizurin</font>
+</font>
+</div>  

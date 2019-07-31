@@ -8,7 +8,7 @@ function wordFilter($text)
     $ambilkata = str_replace('<a class="entry-category"', '<p hidden>', $ambilkata);
     $ambilkata = str_replace('<b>Genre</b>', '<p hidden>', $ambilkata);
     $ambilkata = str_replace('<div class="entry-thumb">', '<div class="kotak">', $ambilkata);
-    $ambilkata = str_replace('h2', 'h3', $ambilkata);
+    $ambilkata = str_replace('h2', 'h4', $ambilkata);
 
     //string modifyurl
     $ambilkata = str_replace('<a href="', '<a href="lib/get.php?anti=', $ambilkata);
@@ -35,14 +35,3 @@ if ( preg_match($regex, $page, $list) )
 else 
     print "Not found"; 
  ?>
- <p>
- <div class="intro">
-<font color=crimson face=consolas size=3>
-
-<b>&copy; Sin,</b>
-(<a href="lib/info.php" rel="nofollow" target="_blank" class="class2">server status</a>) | <font size="3" color="green">
-scraped in <?php echo(number_format(microtime(true) - $start_time, 2)); ?> sec.</font>
-<br><font size="3" color="gray">
-feel free to pull,issues,or stealing at:<br><font color=blue> https://github.com/sinkaroid/antifansub</font>
-</font>
-</div>  
