@@ -1,12 +1,12 @@
 <title>daizurinID</title>
 <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="/daizurin/lib/style.css">
+<link rel="stylesheet" type="text/css" href="/lib/style.css">
 <?php $start_time = microtime(true); ?>
 
-<script type="text/javascript" src="/daizurin/inc/rain.js"></script> 
+<script type="text/javascript" src="/lib/rain.js"></script>
 <style>
   body { 
-   background: black url("/daizurin/inc/a.png") no-repeat fixed center; 
+    background: black url("/src/bg.jpg") no-repeat fixed center; 
  }
  
 </style>
@@ -14,13 +14,13 @@
 <div class="toto">
 <font face="courier" size="4" color="red">
 <pre style="text-align: left;">
-                 _   _ ______                    _     
-     /\         | | (_)  ____|                  | |    
-    /  \   _ __ | |_ _| |__ __ _ _ __  ___ _   _| |__  
-   / /\ \ | '_ \| __| |  __/ _` | '_ \/ __| | | | '_ \ 
-  / ____ \| | | | |_| | | | (_| | | | \__ \ |_| | |_) |
- /_/    \_\_| |_|\__|_|_|  \__,_|_| |_|___/\__,_|_.__/ 
-                                  Your coins end here.
+                      _ _                  ___      _x265     
+                     | | |                / _ \    | |     
+  ___ _ __ ___   __ _| | | ___ _ __   ___| | | | __| | ___ 
+ / __| '_ ` _ \ / _` | | |/ _ \ '_ \ / __| | | |/ _` |/ _ \
+ \__ \ | | | | | (_| | | |  __/ | | | (__| |_| | (_| |  __/
+ |___/_| |_| |_|\__,_|_|_|\___|_| |_|\___|\___/ \__,_|\___|
+                                                          
 </pre></div>
 <center>
 <?php
@@ -46,22 +46,17 @@ echo '</font>';
 
 
 
-<center><br><div id="steal"><a href="list" rel="nofollow" target="_blank"><font face=Ubuntu size="2" color="white"><b>animelist<b/></font></a></div></center>
-<div class="koceng">
-<font face="courier" size="3" color="gray">
-<pre>
-available params : <font color=red>?list, ?search, ?series</font>
-</pre>
-</div>
+<font face=Ubuntu size="2" color="white">
+<center><br><div id="steal"><a href="/"><b>/home<b/></a>
+<a href="/list" rel="nofollow" target="_blank"><b>animelist</b></a>
+<a href="/?chart" rel="nofollow" target="_blank"><b>schedule</b></a></div><br>
 </font>
-<form action="/daizurin/page/list/anime.php" method="get">
-<input type="show" class="bordergaya" style="width:10%;" placeholder="series" name="q"><br>
+
+
+<form action="/lib/anime.php" method="get">
+<input type="show" style="width:10%;" placeholder="series" name="q"><br>
 </form>
-<center>
-<form action="page.php" method="get">
-<input type="hidden" style="width:10%;" placeholder="page berapa" name="page"><br>
-</form>
-</font>
+
 
 <?php
 echo'<font color=gold>';
@@ -76,9 +71,9 @@ function wordFilter($text)
     $ambilkata = str_replace('h2', 'h3', $ambilkata);
 
     //string modifyurl
-    $ambilkata = str_replace('<a href="', '<a href="lib/get.php?anti=', $ambilkata);
-    $ambilkata = str_replace('" rel=', '&fansub=SUCK" rel="nofollow" target="_blank" rel=', $ambilkata);
-    $ambilkata = str_replace('" title', '&fansub=SUCK" rel="nofollow" target="_blank" " title', $ambilkata);
+    $ambilkata = str_replace('<a href="https://www.daizurin.com/', '<a href="/lib/get.php?id=', $ambilkata);
+    $ambilkata = str_replace('rel="bookmark"', 'rel="nofollow" target="_blank"', $ambilkata);
+    $ambilkata = str_replace('title=', 'rel="nofollow" target="_blank" title=', $ambilkata);
     return $ambilkata;
 }
 
@@ -114,7 +109,7 @@ else
 ?>
 
 <div class="page">
-<a href="/daizurin/page?x=1">1</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=2"><span class="pg">2</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=3"><span class="pg">3</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=4"><span class="pg">4</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=5"><span class="pg">5</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=6"><span class="pg">6</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=7"><span class="pg">7</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=8"><span class="pg">8</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=9"><span class="pg">9</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=10"><span class="pg">10</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=11"><span class="pg">&gt;</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=87"><span class="pg">Last</span></a> </div>
+<a href="/page?x=1">1</span></a>&nbsp;&nbsp;&nbsp;<a href="/daizurin/page?x=2"><span class="pg">2</span></a>&nbsp;&nbsp;&nbsp;<a href="/page?x=3"><span class="pg">3</span></a>&nbsp;&nbsp;&nbsp;<a href="/page?x=4"><span class="pg">4</span></a>&nbsp;&nbsp;&nbsp;<a href="/page?x=5"><span class="pg">5</span></a>&nbsp;&nbsp;&nbsp;<a href="/page?x=6"><span class="pg">6</span></a>&nbsp;&nbsp;&nbsp;<a href="/page?x=7"><span class="pg">7</span></a>&nbsp;&nbsp;&nbsp;<a href="/page?x=8"><span class="pg">8</span></a>&nbsp;&nbsp;&nbsp;<a href="/page?x=9"><span class="pg">9</span></a>&nbsp;&nbsp;&nbsp;<a href="/page?x=10"><span class="pg">10</span></a>&nbsp;&nbsp;&nbsp;<a href="/page?x=11"><span class="pg">&gt;</span></a>&nbsp;&nbsp;&nbsp;<a href="/page?x=87"><span class="pg">Last</span></a> </div>
 <div>
 <p>
  <div class="intro">

@@ -1,5 +1,6 @@
-<title>Antifansub | Download</title>
+<title>smallenc0de | Download</title>
 <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/lib/rain.js"></script>
 <style>
 .memek {
   margin: auto;
@@ -62,16 +63,20 @@
 <font face=Ubuntu>
 <?php
 $form = '<form action="lib/get.php" method="get">
-<input type="hidden" style="width:40%;" name="anti"><br>
-<input type="hidden" name="fansub" value="SUCK">
+<input type="hidden" style="width:40%;" name="id"><br>
+<input type="hidden" name="id" value="SUCK">
 </center>
 </form>';
 
 print $form;
 
-if(isset($_GET['fansub'])){
-$anti = $_GET['anti'];
-$curl = curl_init($anti); 
+if(isset($_GET['id'])){
+  $anti = $_GET['id'];
+ 
+  $bangsat = 'https://www.daizurin.com/';
+  $kontol = $bangsat . $anti; 
+  $curl = curl_init($kontol); 
+
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE); 
 $page = curl_exec($curl); 
 if(curl_errno($curl)) 
@@ -97,7 +102,7 @@ function wordFilter($text)
 
 
 //link    
-$regex = '/<div class="entry-content">(.*?)<div class="crp_related ">/s';
+$regex = '/<div class="entry-content">(.*?)<\/article>/s';
 if ( preg_match($regex, $page, $list) )
 	
     echo wordFilter($list[0]); 

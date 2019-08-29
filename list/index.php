@@ -1,5 +1,6 @@
-<title>daizu | animeList</title>
+<title>smallenc0de | animeList</title>
 <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/lib/rain.js"></script>
 <style>
 
  .toto {
@@ -8,7 +9,7 @@
 
 
   body { 
-   background: black url("http://localhost/daizurin/src/bg.jpg") no-repeat fixed center; 
+    background: black url("/src/bg.jpg") no-repeat fixed center; 
  }
  a {
    color: hotpink;
@@ -75,12 +76,11 @@ function wordFilter($text)
     //openurl
    
       
-       $ambilkata = str_replace('<a href="', '<a href="/daizurin/lib/get.php?anti=', $ambilkata);
+    $ambilkata = str_replace('<a href="https://www.daizurin.com/', '<a href="/lib/get.php?id=', $ambilkata);
        $ambilkata = str_replace('" target=', '&fansub=SUCK" rel="nofollow"', $ambilkata);
-       $ambilkata = str_replace('">', '&fansub=SUCK">', $ambilkata);
+      
        
 
-       $ambilkata = str_replace('" rel="category', '&fansub=SUCK">', $ambilkata);
     return $ambilkata;
 }
 $curl = curl_init('https://www.daizurin.com/anime-list'); //victim

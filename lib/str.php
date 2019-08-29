@@ -11,9 +11,9 @@ function wordFilter($text)
     $ambilkata = str_replace('h2', 'h4', $ambilkata);
 
     //string modifyurl
-    $ambilkata = str_replace('<a href="', '<a href="lib/get.php?anti=', $ambilkata);
-    $ambilkata = str_replace('" rel=', '&fansub=SUCK" rel="nofollow" target="_blank" rel=', $ambilkata);
-    $ambilkata = str_replace('" title', '&fansub=SUCK" rel="nofollow" target="_blank" " title', $ambilkata);
+    $ambilkata = str_replace('<a href="https://www.daizurin.com/', '<a href="lib/get.php?id=', $ambilkata);
+    $ambilkata = str_replace('rel="bookmark"', 'rel="nofollow" target="_blank"', $ambilkata);
+    $ambilkata = str_replace('title=', 'rel="nofollow" target="_blank" title=', $ambilkata);
     return $ambilkata;
 }
 
