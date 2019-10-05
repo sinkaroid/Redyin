@@ -11,7 +11,7 @@ div.rounded {
 	-webkit-border-radius: 10px; }
  
 	div.kotak {
-	 background-color: hotpink;
+	 background-color: deeppink;
 	 margin: auto;
    width: 20%;
 	 color: #000000;
@@ -21,8 +21,8 @@ div.rounded {
 	 -webkit-border-radius: 20px; }    
  
 	img {
-   width: 200px; 
-   height: 200px; 
+   width: 150px; 
+   height: 150px; 
    border-radius: 50%;
    border: 2px solid gold;
    padding: 1px;
@@ -39,7 +39,7 @@ div.rounded {
  #steal a{
 	 padding:5px 5px;
 	 margin:1;
-	 background:red;
+	 background:deeppink;
 	 text-decoration:none;
 	 letter-spacing:1px;
 	 -moz-border-radius: 10px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;
@@ -92,7 +92,7 @@ div.rounded {
   .intro {
    margin: auto;
    background-color: #f7f3f3;
-   width: 30%;
+   width: 20%;
    
    padding: 10px;
    -moz-border-radius: 5px;
@@ -116,4 +116,14 @@ div.rounded {
 	text-align: center;
 	width: 100%;
 	padding: 1px;
+  }
+
+  .argu {
+	margin: auto;
+	background-color: #f7f3f3;
+	width: 30%;
+	
+	padding: 10px;
+	-moz-border-radius: 5px;
+	  -webkit-border-radius: 20px;
   }

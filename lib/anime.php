@@ -1,4 +1,4 @@
-<title>AntifansubID</title>
+
 <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="/lib/style.css">
 <?php $start_time = microtime(true); ?>
@@ -12,7 +12,7 @@
 </style>
 <center>
 <div class="toto">
-<font face="courier" size="4" color="red">
+<font face="courier" size="4" color="gold">
 <pre style="text-align: left;">
                       _ _                  ___      _x265     
                      | | |                / _ \    | |     
@@ -23,26 +23,20 @@
                                                           
 </pre></div>
 <center>
-<center>
 <?php
 
-echo '<font face=Consolas color=gold size=3>';
-$tanggal= mktime(date("m"),date("d"),date("Y"));
-echo "[<font color=green>d</font> : <b>(".date("d-M-Y", $tanggal).")</b> ";
-date_default_timezone_set('Asia/Jakarta');
-$jam=date("H:i:s");
-echo "-> <font color=green>t</font> : <b>(". $jam.") "."</b> -> ";
-$a = date ("H");
-if (($a>=6) && ($a<=11)){
-echo "<font color=white><b>Morning</font></b>]";
-}
-else if(($a>11) && ($a<=15))
-{
-echo ", Morning";}
-else if (($a>15) && ($a<=18)){
-echo ", Good day";}
-else { echo ", <b> Night</b>";}
-echo '</font>';
+// multiple timestamp
+echo '<b><font face=Ubuntu color=gold size=3>';
+date_default_timezone_set('Asia/Tokyo'); 
+echo 'JST: ',date('M-d (H:i)');
+print '</font>';
+
+echo ' <font color=white size=5> // </font> ';
+
+echo '<font face=Ubuntu color=orange size=3>';
+date_default_timezone_set('Asia/Jakarta'); 
+echo 'Asia/jakarta: ',date('M-d (H:i)');
+print '</font></b>';
 ?>
 
 
@@ -93,4 +87,4 @@ if(isset($_GET['q'])){
   }
   
 ?>
-
+<title><?php echo 'searched :', $babi,' - smallenc0de'; ?></title>

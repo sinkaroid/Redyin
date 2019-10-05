@@ -1,4 +1,4 @@
-<title>smallenc0de | Download</title>
+
 <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="/lib/rain.js"></script>
 <style>
@@ -23,7 +23,20 @@
   display: inline-block;
   text-align: left;
  }
-
+ 
+ #steal a{
+  padding:5px 5px;
+  margin:1;
+  background:white;
+  text-decoration:none;
+  letter-spacing:1px;
+  -moz-border-radius: 10px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;
+}
+#steal a:hover{
+  background:pink;
+  border-bottom:5px solid #red;
+  border-top:5px solid #red;
+}
  div.rounded {
    
     border: 3px dotted gray;
@@ -53,14 +66,23 @@
 .intro {
   margin: auto;
   background-color: #f7f3f3;
-  width: 30%;
+  width: 20%;
   
   padding: 10px;
   -moz-border-radius: 5px;
 	-webkit-border-radius: 20px;
 }
+
+img {
+  -moz-border-radius: 5px;
+	 -webkit-border-radius: 40px; }    
+ }
 </style>
+
 <font face=Ubuntu>
+<center><div id="steal"><a href="/"><b>/home<b/></a>
+</div>  
+<b>
 <?php
 $form = '<form action="lib/get.php" method="get">
 <input type="hidden" style="width:40%;" name="id"><br>
@@ -102,7 +124,7 @@ function wordFilter($text)
 
 
 //link    
-$regex = '/<div class="entry-content">(.*?)<\/article>/s';
+$regex = '/<div class="entry-content">(.*?)<div class="crp_related ">/s';
 if ( preg_match($regex, $page, $list) )
 	
     echo wordFilter($list[0]); 
@@ -111,15 +133,27 @@ else
 
 }
 
+function sed($text)
+{
+    $sed = $text;
+    $sed = str_replace('-', ' ', $sed);
+    
+    return $sed;
+}
+
+$judul = sed(strtoupper($_GET['id']));
+
 ?>
+</b>
+<title><?php echo $judul,' - Download'; ?></title>
 </div></div></div>
 <p><center>
  <div class="intro">
-<font color=crimson face=consolas size=3>
+<font color=crimson face=consolas size=2>
 
 <b>&copy; Sin,</b>
 
-<br><font size="3" color="gray">
-feel free to pull,issues,or stealing at:<br><font color=blue> https://github.com/sinkaroid/daizurin</font>
+<br><font size="2" color="gray">
+feel free to pull,issues,or stealing at:<br><font color=blue> https://github.com/sinkaroid/smallencode</font>
 </font>
 </div>   
