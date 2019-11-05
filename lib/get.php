@@ -5,7 +5,7 @@
 .memek {
   margin: auto;
   background-color: #f7f3f3;
-  width: 50%;
+  width: 60%;
   
   padding: 10px;
   -moz-border-radius: 5px;
@@ -117,6 +117,7 @@ function wordFilter($text)
     $ambilkata = str_replace('<p style="text-align: center;">', '<p hidden>', $ambilkata);
     $ambilkata = str_replace('<h2 style="text-align: center;">', '<p hidden>', $ambilkata);
     $ambilkata = str_replace('<span class="dpsp-network-label">', '<p hidden>', $ambilkata);
+    $ambilkata = str_replace('<div id="M477931ScriptRootC728502"> ', '<div hidden>', $ambilkata);
     $ambilkata = str_replace('<li>', '', $ambilkata);
     return $ambilkata;
 }
@@ -124,7 +125,7 @@ function wordFilter($text)
 
 
 //link    
-$regex = '/<div class="entry-content">(.*?)<div class="crp_related ">/s';
+$regex = '/<div class="entry-content">(.*?)<\/article>/s';
 if ( preg_match($regex, $page, $list) )
 	
     echo wordFilter($list[0]); 

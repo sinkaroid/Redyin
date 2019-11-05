@@ -53,7 +53,7 @@
  .intro {
    margin: auto;
    background-color: #f7f3f3;
-   width: 30%;
+   width: 20%;
    
    padding: 10px;
    -moz-border-radius: 5px;
@@ -103,22 +103,23 @@ else
     print "Not found"; 
 
 ?>
+</div>
 <?php
 $dom = new \DOMDocument();
 @$dom->loadHTML($page); // or @$dom->loadHTMLFile($filename); if providing filename rather than actual HTML content
 
 $count = $dom->getElementsByTagName("a")->length;
-echo '<br><center>Founded <b>',$count,' </b>AnimeDB</center>';
+echo '<br><center>counted <b>',$count,' </b>Series</center>';
 
 ?>
 </div><br><br>
 <center>
  <div class="intro">
-<font color=crimson face=consolas size=3>
+<font color=crimson face=consolas size=2>
 
 <b>&copy; Sin,</b>
 
-<br><font size="3" color="gray">
-feel free to pull,issues,or stealing at:<br><font color=blue> https://github.com/sinkaroid/daizurin</font>
+<br><font size="2" color="gray">
+feel free to pull,issues,or stealing at:<br><font color=blue> https://github.com/sinkaroid/smallencode</font>
 </font>
 </div>   
