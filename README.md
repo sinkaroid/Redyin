@@ -13,9 +13,8 @@ require 'lib/str.php';
 
 ## start with python  
 ![](https://i.imgur.com/Dp8nJEN.png)  
-```py
-$ ./smol.sh
-```  
+----
+     $ ./smol.sh  
 ### webhook
 
 
