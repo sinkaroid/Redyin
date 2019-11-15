@@ -12,7 +12,7 @@
 </style>
 <center>
 <div class="toto">
-<font face="courier" size="4" color="gold">
+<font face="courier" size="4" color="red">
 <pre style="text-align: left;">
                       _ _                  ___      _x265     
                      | | |                / _ \    | |     

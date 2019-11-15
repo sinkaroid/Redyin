@@ -21,7 +21,7 @@ require 'lib/jadwal.php';  #model
 </style>
 <center>
 <div class="toto">
-<font face="courier" size="4" color="gold">
+<font face="courier" size="4" color="red">
 <pre style="text-align: left;">
                       _ _                  ___      _x265     
                      | | |                / _ \    | |     
@@ -71,7 +71,7 @@ require 'lib/str.php';
 <div class="argu">
 <font color=black face=Ubuntu size=3>
 
-<center>arguments:<br></center>
+<center>params:<br></center>
 <?php
 $bc = basename(__FILE__);
 echo "SITE: ".$_SERVER['SERVER_NAME']."<br>";

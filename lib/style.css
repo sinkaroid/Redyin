@@ -8,7 +8,7 @@ div.rounded {
 	padding: 1px;
 	
   -moz-border-radius: 5px;
-	-webkit-border-radius: 10px; }
+	border-radius: 10px; }
  
 	div.kotak {
 	 background-color: deeppink;
@@ -18,7 +18,7 @@ div.rounded {
 	 padding: 1px;
 	 
 	 -moz-border-radius: 5px;
-	 -webkit-border-radius: 20px; }    
+	 border-radius: 20px; }    
  
 	img {
    width: 150px; 
@@ -44,11 +44,7 @@ div.rounded {
 	 letter-spacing:1px;
 	 -moz-border-radius: 10px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;
  }
- #steal a:hover{
-	 background:gray;
-	 border-bottom:5px solid #red;
-	 border-top:5px solid #red;
- }
+
  
  section {
    float: left;
@@ -96,7 +92,7 @@ div.rounded {
    
    padding: 10px;
    -moz-border-radius: 5px;
-	 -webkit-border-radius: 20px;
+	 border-radius: 20px;
  }
  
  A.class2 {color:blue;}
@@ -108,7 +104,7 @@ div.rounded {
 	
 	padding: 10px;
 	-moz-border-radius: 5px;
-	  -webkit-border-radius: 30px;
+	  border-radius: 30px;
   }
   
   .bokong {
@@ -125,5 +121,5 @@ div.rounded {
 	
 	padding: 10px;
 	-moz-border-radius: 5px;
-	  -webkit-border-radius: 20px;
+	  border-radius: 20px;
   }

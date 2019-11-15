@@ -20,39 +20,7 @@ pre code {
 </head>
 <html><div class="container">
 <?php
-/*
 
- *
- * @author      Trường An Phạm Nguyễn
- * @copyright   2019, The authors
- * @license     GNU AFFERO GENERAL PUBLIC LICENSE
- *        http://www.gnu.org/licenses/agpl-3.0.html
- *
- * Jul 27, 2013
-
-Original author:
-*       Disclaimer Notice(s)                                                          
-*       ex: This code is freely given to you and given "AS IS", SO if it damages      
-*       your computer, formats your HDs, or burns your house I am not the one to
-*       blame.                                                                     
-*       Moreover, don't forget to include my copyright notices and name.               
-*   +------------------------------------------------------------------------------+
-*       Author(s): Crooty.co.uk (Adam C)                                    
-*   +------------------------------------------------------------------------------+
-
-	This program is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
-
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/  
 $data = "";
 $data .= '
 <div class="card my-2">
@@ -66,12 +34,7 @@ $data .= '
 //configure script
 $timeout = "1";
 
-//set service checks
-/* 
-The script will open a socket to the following service to test for connection.
-Does not test the fucntionality, just the ability to connect
-Each service can have a name, port and the Unix domain it run on (default to localhost)
-*/
+
 $services = array();
 
 
