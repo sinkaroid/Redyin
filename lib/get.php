@@ -125,7 +125,7 @@ function wordFilter($text)
 
 
 //link    
-$regex = '/<div class="entry-content">(.*?)<div class="crp_related ">/s';
+$regex = '/<div class="entry-content">(.*?)<div class="crp_related  ">/s';
 if ( preg_match($regex, $page, $list) )
 	
     echo wordFilter($list[0]); 
