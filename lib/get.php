@@ -1,6 +1,6 @@
 
 <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/lib/rain.js"></script>
+<script class="udan" type="text/javascript" src="/lib/rain.js"></script>
 <style>
 .memek {
   margin: auto;
@@ -114,18 +114,15 @@ print '<div class="memek"><center><br>';
 function wordFilter($text)
 {
     $ambilkata = $text;
-    $ambilkata = str_replace('<p style="text-align: center;">', '<p hidden>', $ambilkata);
-    $ambilkata = str_replace('<h2 style="text-align: center;">', '<p hidden>', $ambilkata);
-    $ambilkata = str_replace('<span class="dpsp-network-label">', '<p hidden>', $ambilkata);
-    $ambilkata = str_replace('<div id="M477931ScriptRootC728502"> ', '<div hidden>', $ambilkata);
-    $ambilkata = str_replace('<li>', '', $ambilkata);
+    $ambilkata = str_replace("<div class='code-block code-block-2'", '<div hidden>', $ambilkata);
+    $ambilkata = str_replace('<script type="text/javascript"', '<script hidden>', $ambilkata);
     return $ambilkata;
 }
 
 
 
 //link    
-$regex = '/<div class="entry-content">(.*?)<div class="crp_related  ">/s';
+$regex = '/<div class="entry-content">(.*?)<\/article>/s';
 if ( preg_match($regex, $page, $list) )
 	
     echo wordFilter($list[0]); 

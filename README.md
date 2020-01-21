@@ -1,5 +1,5 @@
 ## smallenc0de  
-[![CodeFactor](https://www.codefactor.io/repository/github/sinkaroid/smallencode/badge)](https://www.codefactor.io/repository/github/sinkaroid/smallencode) ![](https://img.shields.io/badge/codename-x265-lightgrey) ![](https://img.shields.io/github/last-commit/sinkaroid/smallenc0de)  
+[![CodeFactor](https://www.codefactor.io/repository/github/sinkaroid/smallencode/badge)](https://www.codefactor.io/repository/github/sinkaroid/smallencode) [![](https://img.shields.io/packagist/php-v/curl/curl)](https://packagist.org/packages/curl/curl) [![](https://img.shields.io/github/commit-activity/m/sinkaroid/smallencode)](https://github.com/sinkaroid/smallencode/tree/master)  
 ## parameter  
 - `?home` main  
 - `page/?x={1..99}` page  
