@@ -114,8 +114,8 @@ print '<div class="memek"><center><br>';
 function wordFilter($text)
 {
     $ambilkata = $text;
-    $ambilkata = str_replace("<div class='code-block code-block-2'", '<div hidden>', $ambilkata);
-    $ambilkata = str_replace('<script type="text/javascript"', '<script hidden>', $ambilkata);
+    
+    $ambilkata = str_replace('type="text/javascript"', 'type="text/javascript" hidden>', $ambilkata); #dog
     return $ambilkata;
 }
 
