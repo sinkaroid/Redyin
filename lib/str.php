@@ -14,6 +14,7 @@ function wordFilter($text)
     $ambilkata = str_replace('<a href="https://www.daizurin.com/', '<a href="lib/get.php?id=', $ambilkata);
     $ambilkata = str_replace('rel="bookmark"', 'rel="nofollow" target="_blank"', $ambilkata);
     $ambilkata = str_replace('title=', 'rel="nofollow" target="_blank" title=', $ambilkata);
+    $ambilkata = str_replace('type="text/javascript"', 'type="text/javascript" hidden>', $ambilkata); #dog
     return $ambilkata;
 }
 

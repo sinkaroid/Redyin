@@ -116,6 +116,7 @@ function wordFilter($text)
     $ambilkata = $text;
     
     $ambilkata = str_replace('type="text/javascript"', 'type="text/javascript" hidden>', $ambilkata); #dog
+    $ambilkata = str_replace('<a href="https://adserver', '<a hidden', $ambilkata); #dog again
     return $ambilkata;
 }
 
