@@ -29,7 +29,7 @@ if(curl_errno($curl)) // check for execution errors
 }
 curl_close($curl);
 
-$regex = '/<div class="content-inside">(.*?)<h2 class="screen-reader-text">/s';
+$regex = '/<div class="block1 block1_grid">(.*?)<h2 class="screen-reader-text">/s';
 if ( preg_match($regex, $page, $list) )
 	
     echo wordFilter($list[0]); 

@@ -90,7 +90,7 @@ if(curl_errno($curl))
 curl_close($curl);
 
 
-$tag = '/<div class="content-inside">(.*?)<div class="ft-paginate">/s';
+$tag = '/<div class="block1 block1_grid">(.*?)<h2 class="screen-reader-text">/s';
 if ( preg_match($tag, $target, $udah) )
 	
     echo wordFilter($udah[0]);

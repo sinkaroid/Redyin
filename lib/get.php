@@ -123,7 +123,7 @@ function wordFilter($text)
 
 
 //link    
-$regex = '/<div class="entry-content">(.*?)<\/article>/s';
+$regex = '/<div class="entry-content">(.*?)<div id="rn_ad_native_fcfx1">/s';
 if ( preg_match($regex, $page, $list) )
 	
     echo wordFilter($list[0]); 
@@ -143,6 +143,7 @@ function sed($text)
 $judul = sed(strtoupper($_GET['id']));
 
 ?>
+</div>
 </b>
 <title><?php echo $judul,' - Download'; ?></title>
 </div></div></div>
