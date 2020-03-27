@@ -11,19 +11,15 @@
 require 'lib/str.php'; 
 ```
 
-## start with python  
-![](https://i.imgur.com/Dp8nJEN.png)  
-----
-     $ ./smol.sh  
 ### webhook
 
 
-![](https://1.bp.blogspot.com/-ZAnSufSPKi8/XWcjUUFCVCI/AAAAAAAAJqw/Q8SpFfiUftU-QQobxelQj9uGpkyhZ61GgCLcBGAs/s1600/Screenshot_121.png)  
+![](https://i.imgur.com/q9UVkRJ.png)  
 
 ```php
 {
     $sed = $text;
-    $sed = str_replace('thisrepo', 'https://yoursite/lib/get.php?id=', $sed);
+    $sed = str_replace('victim', 'https://yoursite/lib/get.php?id=', $sed);
     return $sed; # or u can use your own rss fetcher
 }
 ``` 

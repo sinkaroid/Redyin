@@ -117,13 +117,14 @@ function wordFilter($text)
     
     $ambilkata = str_replace('type="text/javascript"', 'type="text/javascript" hidden>', $ambilkata); #dog
     $ambilkata = str_replace('<a href="https://adserver', '<a hidden', $ambilkata); #dog again
+    $ambilkata = str_replace('Alt download', '', $ambilkata); 
     return $ambilkata;
 }
 
 
 
 //link    
-$regex = '/<div class="entry-content">(.*?)<div id="rn_ad_native_fcfx1">/s';
+$regex = '/<div class="entry-content">(.*?)Alt download(.*?)/s'; // \* = "*" matches
 if ( preg_match($regex, $page, $list) )
 	
     echo wordFilter($list[0]); 
