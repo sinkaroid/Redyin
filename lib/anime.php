@@ -5,21 +5,27 @@
 
 <script type="text/javascript" src="/lib/rain.js"></script>
 <style>
-  body { 
-    background: black url("/src/bg.jpg") no-repeat fixed center; 
- }
+    body {
+  background: url(/src/goblok.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  
+}
  
 </style>
 <center>
 <div class="toto">
-<font face="courier" size="4" color="red">
+<font face="courier" size="4" color="gold">
 <pre style="text-align: left;">
-                      _ _                  ___      _x265     
-                     | | |                / _ \    | |     
-  ___ _ __ ___   __ _| | | ___ _ __   ___| | | | __| | ___ 
- / __| '_ ` _ \ / _` | | |/ _ \ '_ \ / __| | | |/ _` |/ _ \
- \__ \ | | | | | (_| | | |  __/ | | | (__| |_| | (_| |  __/
- |___/_| |_| |_|\__,_|_|_|\___|_| |_|\___|\___/ \__,_|\___|
+
+__   ___            ______         _           _ _ _   
+\ \ / (_)           | ___ \       | |         | (_) |  
+ \ V / _ _ __ ______| |_/ /___  __| |___ _ __ | |_| |_ 
+  \ / | | '_ \______|    // _ \/ _` / __| '_ \| | | __|
+  | | | | | | |_    | |\ \  __/ (_| \__ \ |_) | | | |_ 
+  \_/ |_|_| |_( )   \_| \_\___|\__,_|___/ .__/|_|_|\__|
+              |/                        | |            
+                                        |_|       codename:Yin
                                                           
 </pre></div>
 <center>
@@ -51,7 +57,9 @@ print '</font></b>';
 <form action="anime.php" method="get">
 <input type="show" style="width:10%;" placeholder="series" name="q"><br>
 </form>
+<div class="fetish">
 
+<div class="row">
 <?php
 
 require 'search.php';
@@ -87,4 +95,5 @@ if(isset($_GET['q'])){
   }
   
 ?>
+</div>
 <title><?php echo 'searched :', $babi,' - smallenc0de'; ?></title>

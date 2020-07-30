@@ -4,7 +4,7 @@
 <style>
 .memek {
   margin: auto;
-  background-color: #f7f3f3;
+  background:rgba(255, 255, 255, 0.801);
   width: 60%;
   
   padding: 10px;
@@ -18,6 +18,19 @@
   width: 100%;
   padding: 1px;
 }
+
+div.rounded {
+   
+   border: 3px dotted gray;
+   margin: auto;
+   width: 70%;
+   color: #000000;
+   font-weight: bold;
+   padding: 1px;
+   
+   -moz-border-radius: 5px;
+   border-radius: 10px; }
+
 
 .koceng {
   display: inline-block;
@@ -59,8 +72,11 @@
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 20px; }   
    
-  body { 
-  background: black url("src/bg.jpg") no-repeat fixed center; 
+  body {
+  background: url(/src/goblok.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  
 }
 
 .intro {
@@ -77,6 +93,28 @@ img {
   -moz-border-radius: 5px;
 	 -webkit-border-radius: 40px; }    
  }
+
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
 </style>
 
 <font face=Ubuntu>
@@ -84,13 +122,13 @@ img {
 </div>  
 <b>
 <?php
+$start_time = microtime(true);
 $form = '<form action="lib/get.php" method="get">
 <input type="hidden" style="width:40%;" name="id"><br>
 <input type="hidden" name="id" value="SUCK">
 </center>
 </form>';
 
-print $form;
 
 if(isset($_GET['id'])){
   $anti = $_GET['id'];
@@ -109,7 +147,7 @@ if(curl_errno($curl))
  
 curl_close($curl);
 
-print '<div class="memek"><center><br>';
+print '<div class="memek" style="width: 850px"><center><br>';
 //anime info    
 function wordFilter($text)
 {
@@ -118,6 +156,10 @@ function wordFilter($text)
     $ambilkata = str_replace('type="text/javascript"', 'type="text/javascript" hidden>', $ambilkata); #dog
     $ambilkata = str_replace('<a href="https://adserver', '<a hidden', $ambilkata); #dog again
     $ambilkata = str_replace('Alt download', '', $ambilkata); 
+    $ambilkata = str_replace('width="', 'width="300"', $ambilkata); 
+    $ambilkata = str_replace('height="', 'height="200"', $ambilkata);
+    $ambilkata = str_replace('<p>Information', '<div class="rounded"><p>Information', $ambilkata); 
+    $ambilkata = str_replace('<p>Sinopsis', '</div><p>Sinopsis', $ambilkata); 
     return $ambilkata;
 }
 
@@ -149,12 +191,13 @@ $judul = sed(strtoupper($_GET['id']));
 <title><?php echo $judul,' - Download'; ?></title>
 </div></div></div>
 <p><center>
- <div class="intro">
-<font color=crimson face=consolas size=2>
+<div class="intro" style="width: 400px">
+<font color=crimson face=consolas size=3>
 
 <b>&copy; Sin,</b>
-
+(<a href="https://dolls.redsplit.org/782309035" rel="nofollow" target="_blank" class="class2">server status</a>) | <font size="2" color="green">
+scraped in <?php echo(number_format(microtime(true) - $start_time, 2)); ?> sec.</font>
 <br><font size="2" color="gray">
-feel free to pull,issues,or stealing at:<br><font color=blue> https://github.com/sinkaroid/smallencode</font>
+feel free to pull,issues,or stealing at:<br><font color=blue> https://github.com/sinkaroid/Redyin</font>
 </font>
-</div>   
+</div>    

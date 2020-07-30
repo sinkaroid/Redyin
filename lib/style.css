@@ -11,20 +11,21 @@ div.rounded {
 	border-radius: 10px; }
  
 	div.kotak {
-	 background-color: deeppink;
+	 background-color:rgba(247, 112, 225, 0.103);
 	 margin: auto;
-   width: 20%;
+   width: 80%;
 	 color: #000000;
 	 padding: 1px;
 	 
 	 -moz-border-radius: 5px;
-	 border-radius: 20px; }    
+	 border-radius: 20px;
+		}
  
 	img {
-   width: 100px; 
-   height: 100px; 
+   width: 130px;
+   height: 130px;
    border-radius: 50%;
-   border: 2px solid gold;
+   border: 2px solid white;
    padding: 1px;
   
  }
@@ -34,10 +35,61 @@ div.rounded {
 	 -webkit-transition: .8s ease-in-out;
 	 transition: .8s ease-in-out;
  }
+
+ .img1 {
+	filter: drop-shadow(0 4px 5px rgba(226, 223, 223, 0.945));
+	animation: pulsePic 2s infinite;
+	-webkit-animation: pulsePic 2s infinite;
+	border-radius: 90%;
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	text-align: center;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none
+
+}
+@-webkit-keyframes pulsePic {
+0% {
+	-webkit-box-shadow: 0 0 0 0 rgba(246, 246, 246, .4)
+}
+70% {
+	-webkit-box-shadow: 0 0 0 20px transparent
+}
+100% {
+	-webkit-box-shadow: 0 0 0 0 transparent
+}
+}
+
+@keyframes pulsePic {
+0% {
+	-moz-box-shadow: 0 0 0 0 rgba(246, 246, 246, .4);
+	box-shadow: 0 0 0 0 rgba(246, 246, 246, .4)
+}
+70% {
+	-moz-box-shadow: 0 0 0 20px transparent;
+	box-shadow: 0 0 0 20px transparent
+}
+100% {
+	-moz-box-shadow: 0 0 0 0 transparent;
+	box-shadow: 0 0 0 0 transparent
+}
+}
+.img1:hover {
+
+ transform: rotate(1000deg) scale(1.0);
+ -webkit-transition: .8s ease-in-out;
+ transition: .8s ease-in-out;
+}
  
  
  #steal a{
-	 padding:5px 5px;
+	 padding:5px;
 	 margin:1;
 	 background:deeppink;
 	 text-decoration:none;
@@ -84,7 +136,7 @@ div.rounded {
  .koceng pre {
    display: inline-block;
    text-align: left;
-  } 
+  }
   .intro {
    margin: auto;
    background-color: #f7f3f3;
@@ -123,3 +175,108 @@ div.rounded {
 	-moz-border-radius: 5px;
 	  border-radius: 20px;
   }
+
+  * {
+	box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+.fetish {
+	margin: auto;
+	background:rgba(78, 57, 57, 0.719);
+	width: 60%;
+	
+	padding: 10px;
+	-moz-border-radius: 5px;
+	  border-radius: 30px;
+  }
+
+  .anjing {
+	margin: auto;
+	background:rgba(78, 57, 57, 0.575);
+	width: 35%;
+	padding: 10px;
+	-moz-border-radius: 5px;
+	  border-radius: 20px;
+
+	  filter: drop-shadow(0 6px 8px rgba(65, 12, 12, 0.65));
+		animation: pulsePic 4s infinite;
+		-webkit-animation: pulsePic 4s infinite;
+	
+		
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		
+		text-align: center;
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-drag: none;
+		-webkit-user-select: none;
+		-ms-user-select: none
+	
+  }
+
+  
+ #sis a{
+	
+	
+	padding:5px;
+	margin:1;
+	background:darkred;
+	text-decoration:none;
+	letter-spacing:1px;
+	-moz-border-radius: 10px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;
+}
+#sis a:hover{
+	background:gray;
+	border-bottom:5px solid red;
+	border-top:5px solid red;
+}
+
+.bordergaya{
+	background:black;
+	color:white;
+	margin:0 10px;
+	font-family:Ubuntu Mono;
+	font-size:16px;
+	border:2px solid #2d2b2b;
+
+}
+.bordergaya:hover{
+	background:#2d2b2b;
+	color:white;
+	margin:0 10px;
+	font-family:Ubuntu Mono;
+	font-size:16px;
+	border:2px solid crimson;
+}
+
+
+#sos a{
+	padding:5px;
+	margin:1;
+	background:darkred;
+	text-decoration:none;
+	letter-spacing:1px;
+	-moz-border-radius: 10px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;
+}
+#sos a:hover{
+	background:gray;
+	border-bottom:5px solid red;
+	border-top:5px solid red;
+}
