@@ -1,7 +1,7 @@
 <div align="center">
    <img width="300" src="https://i.imgur.com/37hl0Bc.png" alt="logo"></br><h2>Redyin</h2>
 
-[![CodeFactor](https://www.codefactor.io/repository/github/sinkaroid/Redyin/badge)](https://www.codefactor.io/repository/github/sinkaroid/Redyin) [![](https://img.shields.io/packagist/php-v/curl/curl)](https://packagist.org/packages/curl/curl) [![](https://img.shields.io/github/commit-activity/m/sinkaroid/Redyin)](https://github.com/sinkaroid/Redyin/tree/master) [![Build Status](https://travis-ci.com/sinkaroid/Redyin.svg?branch=master)](https://travis-ci.com/sinkaroid/Redyin)  
+[![CodeFactor](https://www.codefactor.io/repository/github/sinkaroid/Redyin/badge)](https://www.codefactor.io/repository/github/sinkaroid/Redyin) [![](https://img.shields.io/packagist/php-v/curl/curl)](https://packagist.org/packages/curl/curl) [![](https://img.shields.io/github/commits-since/sinkaroid/Redyin/redsmol)](https://github.com/sinkaroid/Redyin/tree/master) [![Build Status](https://travis-ci.com/sinkaroid/Redyin.svg?branch=master)](https://travis-ci.com/sinkaroid/Redyin)  
 
 </div>
 
