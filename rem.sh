@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "smol buff with /rest_route"
+git commit -m "(.*?)<\/em>/s"
 git push -f origin master

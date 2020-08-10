@@ -166,7 +166,7 @@ function wordFilter($text)
 
 
 //link    
-$regex = '/<div class="entry-content">(.*?)Alt download(.*?)/s'; // \* = "*" matches
+$regex = '/<div class="entry-content">(.*?)<\/em>/s'; // \* = "*" matches
 if ( preg_match($regex, $page, $list) )
 	
     echo wordFilter($list[0]); 
