@@ -22,4 +22,4 @@ require 'lib/str.php';
      $ ./smol  
 
 ### hook:
-![](https://i.imgur.com/NaDehjj.png)
+![](https://i.imgur.com/JMRA43I.png)
