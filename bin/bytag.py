@@ -3,16 +3,6 @@
 from colorama import Fore, Style
 import feedparser
 
-print(Fore.RED)
-print("""
-                     _ _                 _____     _      
-                    | | |               |  _  |   | |     
- ___ _ __ ___   __ _| | | ___ _ __   ___| |/' | __| | ___ 
-/ __| '_ ` _ \ / _` | | |/ _ \ '_ \ / __|  /| |/ _` |/ _ |
-\__ \ | | | | | (_| | | |  __/ | | | (__\ |_/ / (_| |  __/
-|___/_| |_| |_|\__,_|_|_|\___|_| |_|\___|\___/ \__,_|\___|               
-""")
-print(Style.RESET_ALL)
 genre = input("genre: ")
 halaman = input("page: ")
 if genre.strip():

@@ -166,10 +166,10 @@ function wordFilter($text)
 
 
 //link    
-$regex = '/<div class="entry-content">(.*?)<\/em>/s'; // \* = "*" matches
+$regex = '/<div class="entry-content">(.*?)<b>CARA DOWNLOAD:/s'; // \* = "*" matches
 if ( preg_match($regex, $page, $list) )
 	
-    echo wordFilter($list[0]); 
+    echo wordFilter($list[1]); 
 else 
     print "Not found";
 

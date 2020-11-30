@@ -2,7 +2,7 @@
 #smol
 $start_time = microtime(true);
 if(isset($_GET['chart'])){
-require 'lib/jadwal.php';  
+require 'lib/jadwal.php';  //uam
 }
 require 'rest/const0.php';
 require 'lib/str.php'; 

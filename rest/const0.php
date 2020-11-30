@@ -49,7 +49,7 @@ __   ___            ______         _           _ _ _
   | | | | | | |_    | |\ \  __/ (_| \__ \ |_) | | | |_ 
   \_/ |_|_| |_( )   \_| \_\___|\__,_|___/ .__/|_|_|\__|
               |/                        | |            
-                                        |_|       codename:Yin
+                                        |_|       
                                                           
 </pre></div>
 
@@ -75,10 +75,7 @@ __   ___            ______         _           _ _ _
 if(isset($_GET['about'])){
   echo '
   <font face=consolas color=white>
-  this is opensource code, not affiliated with other vendor or victim itself, feel free to pull or issues, 
-  <br>even steal it with change copyright idc, i just want make a simple parser and lightweight static routes.
-  <p>
-  <br> contributor: only me<br> mypower: <i>php7X,codeigniter,reactJS,nginx,and some pypi dependencies</i>
+  fuckoff
   <p>./eof</font>';  
   exit;
   } #or curl /page/?about
